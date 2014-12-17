@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <img src="<%= @bio.image_url %>" alt="<%= @title %>" class="img-circle">
+
+  <h1><%= @bio.name %></h1>
+  
+   <ul class="nav nav-pills nav-stacked">
+ <li class="active"><a href="<%= @li %>">Offical Page Here</a></li>
+     <a href="/bio/<%= @bio.id %>/destroy">| delete</a>
+     
+ 
+</ul>
+  
+  <p><%= @bio.biography %></p>
+  
+  </div>
