@@ -1,12 +1,16 @@
 <div class="jumbotron">
-  <img src="<%= @bio.image_url %>" alt="<%= @title %>" class="img-circle">
-
+  
+<img src="<%= @bio.image_url %>" alt="<%= @bio.name %>">
   <h1><%= @bio.name %></h1>
   
    <ul class="nav nav-pills nav-stacked">
  <li class="active"><a href="<%= @li %>">Offical Page Here</a></li>
-     <a href="/bio/<%= @bio.id %>/destroy">| delete</a>
+    <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default"><a href="/bio/<%= @bio.id %>/edit">edit</a></button>
+          <button type="button" class="btn btn-default"><a href="/bio/<%= @bio.id %>/destroy">delete</a></button>
+        </div>
      
+      
  
 </ul>
   
